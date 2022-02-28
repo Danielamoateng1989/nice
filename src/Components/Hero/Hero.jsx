@@ -81,11 +81,11 @@ import {
                                 fontSize="xs"
                                 p="8px 12px"
                                 pos="absolute"
-                                top="0"
+                                top="10"
                             >
                                 {sid + 1} / {slidesCount}
                             </Text>
-                            <Image src={slide.img} boxSize="full" backgroundSize="cover" />
+                            <Image src={slide.img} boxSize="full" />
                             <Stack
                                 p="8px 12px"
                                 pos="absolute"

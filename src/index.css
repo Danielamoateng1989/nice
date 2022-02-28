@@ -59,7 +59,8 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: grey;
+  color: white;
+  
 }
 @media screen and (min-width: 768px) {
   h1 {
