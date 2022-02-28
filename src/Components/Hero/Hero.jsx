@@ -85,7 +85,7 @@ import {
                             >
                                 {sid + 1} / {slidesCount}
                             </Text>
-                            <Image src={slide.img} boxSize="full" />
+                            <Image src={slide.img} boxSize="full" borderRadius="10px" />
                             <Stack
                                 p="8px 12px"
                                 pos="absolute"
