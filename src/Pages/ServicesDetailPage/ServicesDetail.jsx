@@ -12,8 +12,23 @@ import {
 import React from 'react'
 import { Link } from 'react-router-dom'
 import services from '../../services'
+import styled from 'styled-components'
 
 
+const Button = styled.button`
+  font-size: 1em;
+  margin: 1em;
+  color: white;
+  border-radius: 5px;
+  background-color: #2A73E8;
+  font-weight: bolder;
+  height: 40px;
+  width: 160px;
+  &:hover {
+    background-color: #709ee8;
+  }
+
+`
 
 
 const ServicesDetail = () => {
