@@ -100,18 +100,13 @@ const Navbar = () => {
                         </Link>
 
                         <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
-                            <Button variant="ghost" size="sm">
-                                Hair
-              </Button>
                             
-                            <Button
-                                variant="ghost"
-                                size="sm"
-                            >
-                                Makup
-              </Button>
+             
                         </HStack>
                     </HStack>
+                    
+                    
+                    
                     <HStack
                         spacing={3}
                         display={mobileNav.isOpen ? "none" : "flex"}

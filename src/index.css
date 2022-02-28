@@ -341,5 +341,9 @@ span{
 .login_signup_button {
   color: rgb(32, 32, 32);
   font-size: 0.9rem;
+  border-color: #dbd8d8;
+  border-width: 2px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
