@@ -312,3 +312,14 @@ span{
   margin-top: 10px;
   margin-left: 25px;
 }
+
+/* hero */
+.hero {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  margin-top: 2px;
+  object-fit: contain;
+ 
+ 
+}
