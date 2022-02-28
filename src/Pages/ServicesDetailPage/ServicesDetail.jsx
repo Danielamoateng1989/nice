@@ -122,7 +122,7 @@ const ServicesDetail = () => {
           </Text>
                   </HStack>
                   <HStack />
-                  <Button>Book Now</Button>
+                  <Button>Continue</Button>
                 </Stack>
 
               </Stack>
