@@ -121,7 +121,7 @@ const ServicesDetail = () => {
           </Text>
                             </HStack>
                             <HStack />
-                            <Button onClick={() => navigate('/dateandtime')}>Book Now</Button>
+                            {/* <Button onClick={() => navigate('/dateandtime')}>Book Now</Button> */}
                         </Stack>
 
                     </Stack>
