@@ -95,8 +95,7 @@ import {
                                 mb="8"
                                 color="white"
                             >
-                                <Text fontSize="2xl">{slide.label}</Text>
-                                <Text fontSize="lg">{slide.description}</Text>
+                                <Text fontSize="7xl" fontWeight="bold" marginBottom="90px">{slide.label}</Text>
                             </Stack>
                         </Box>
                     ))}
