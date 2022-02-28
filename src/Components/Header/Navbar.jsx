@@ -15,7 +15,7 @@ import {
     InputGroup,
     InputLeftElement,
     Input,
-    Avatar,
+    
 } from "@chakra-ui/react";
 import logo from "../../images/nice.png";
 import {
@@ -28,6 +28,7 @@ import {
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import { FaUserCircle } from 'react-icons/fa'
+import { IoNotificationsOutline } from 'react-icons/io'
 
 const Navbar = () => {
     const bg = useColorModeValue("white", "gray.800");
@@ -131,13 +132,14 @@ const Navbar = () => {
                             rounded="sm"
                             _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
                         >
-                            <AiFillBell />
-                            <VisuallyHidden>Notifications</VisuallyHidden>
+                            
                         </chakra.a>
 
                        <FaUserCircle className="avatar" />
                     
                     </HStack>
+
+                    <button className="login_signup_button">Login/Signup</button>
                 </Flex>
             </chakra.header>
         </React.Fragment>

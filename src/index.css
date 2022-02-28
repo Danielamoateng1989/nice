@@ -337,3 +337,9 @@ span{
   font-size: 2.8rem;
   color: lightgrey;
 }
+
+.login_signup_button {
+  color: rgb(32, 32, 32);
+  font-size: 0.9rem;
+}
+
