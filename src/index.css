@@ -320,7 +320,5 @@ span{
   display: flex;
   margin: auto;
   margin-top: 2px;
-  object-fit: contain;
- 
- 
+  object-fit: cover;
 }

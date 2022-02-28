@@ -2,10 +2,10 @@
 import './index.css';
 import Navbar from './Components/Header/Navbar';
 import Footer from './Components/Footer/Footer';
-import Homepage from './Pages/Home/Services';
+import Homepage from './Pages/Homepage/Services';
 import Hero from './Components/Hero/Hero';
 
-function App() {
+const App = () => {
   return (
     <>
    <Navbar />

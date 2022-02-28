@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { Rating } from './Rating'
 import FavoriteButton from './FavoriteButton'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const ServiceCard = (props) => {
@@ -27,7 +27,7 @@ const ServiceCard = (props) => {
             >
                 <Box position="relative">
 
-                    {/* <Link to={`/services/${props.product._id}`}> */}
+                    <Link to={`${props.service.id}`}>
                     <AspectRatio ratio={4 / 3}>
 
                         <Image
@@ -44,7 +44,7 @@ const ServiceCard = (props) => {
                         />
 
                     </AspectRatio>
-                    {/* </Link> */}
+                    </Link>
                     <FavoriteButton
                         position="absolute"
                         top="4"
