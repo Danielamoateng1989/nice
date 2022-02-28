@@ -75,24 +75,7 @@ const Navbar = () => {
                                     justifySelf="self-start"
                                     onClick={mobileNav.onClose}
                                 />
-                                <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-                                    Hair
-                </Button>
-                                <Button
-                                    w="full"
-                                    variant="solid"
-                                    colorScheme="brand"
-                                    leftIcon={<AiOutlineInbox />}
-                                >
-                                    Inbox
-                </Button>
-                                <Button
-                                    w="full"
-                                    variant="ghost"
-                                    leftIcon={<BsFillCameraVideoFill />}
-                                >
-                                    Makeup
-                </Button>
+                                
                             </VStack>
                         </Box>
                         <Link to="/">
@@ -100,13 +83,9 @@ const Navbar = () => {
                         </Link>
 
                         <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
-                            
-             
                         </HStack>
-                    </HStack>
-                    
-                    
-                    
+                 </HStack>
+    
                     <HStack
                         spacing={3}
                         display={mobileNav.isOpen ? "none" : "flex"}

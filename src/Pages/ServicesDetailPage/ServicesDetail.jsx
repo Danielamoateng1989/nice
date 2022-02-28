@@ -55,6 +55,7 @@ const ServicesDetail = () => {
               className="back-btn"
             >Go back</button>
           </Link>
+         
           <Stack
             direction={{
               base: 'column-reverse',
@@ -107,7 +108,7 @@ const ServicesDetail = () => {
                   }}
                 >
 
-                  <h1 size="xl" color={"black"} className="hero-heading">
+                  <h1 size="xl" className="hero-heading">
                     {service.name}
                   </h1>
                   <p size="xl" fontWeight="normal" className="price">
