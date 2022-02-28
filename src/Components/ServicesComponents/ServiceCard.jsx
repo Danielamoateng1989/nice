@@ -26,7 +26,7 @@ const ServiceCard = (props) => {
                 {...rootProps}
             >
                 <Box position="relative">
-                    <Link to={`/servicesdetail/${props.service.id}`}>
+                    <Link to={`/services/${props.service.id}`}>
                     <AspectRatio ratio={4 / 3}>
 
                         <Image
