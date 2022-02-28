@@ -23,12 +23,10 @@ const Navbar = () => {
 
  
     return (
-
-        <nav>
+         <nav>
             <div className="nav-center">
                 <div className="nav-header">
-                   
-                        <img src={logo} alt="nicelogo" className="logo"></img>
+                   <img src={logo} alt="nicelogo" className="logo"></img>
              
                     <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
                         <FaBars />
@@ -37,13 +35,10 @@ const Navbar = () => {
 
                 <div className={`${showLinks ? 
                 'links-container show-container'
-                 : 'links-container'} `} />
+                 : 'links-container'} `}
+                />
 
-                
-           
-                    <Button>Logout</Button>
-           
-
+                <Button>Logout</Button>
             </div>
         </nav>
 
