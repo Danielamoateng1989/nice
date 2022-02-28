@@ -332,3 +332,8 @@ span{
   font-size: 2.5rem;
   font-weight: bold;
 }
+
+.avatar {
+  font-size: 2.8rem;
+  color: lightgrey;
+}

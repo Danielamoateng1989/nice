@@ -27,6 +27,7 @@ import {
 } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import { FaUserCircle } from 'react-icons/fa'
 
 const Navbar = () => {
     const bg = useColorModeValue("white", "gray.800");
@@ -74,7 +75,7 @@ const Navbar = () => {
                                     onClick={mobileNav.onClose}
                                 />
                                 <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-                                    Dashboard
+                                    Hair
                 </Button>
                                 <Button
                                     w="full"
@@ -119,6 +120,7 @@ const Navbar = () => {
                             <InputLeftElement
                                 pointerEvents="none"
                                 children={<AiOutlineSearch />}
+                                
                             />
                             <Input type="tel" placeholder="Search..." />
                         </InputGroup>
@@ -133,11 +135,8 @@ const Navbar = () => {
                             <VisuallyHidden>Notifications</VisuallyHidden>
                         </chakra.a>
 
-                        <Avatar
-                            size="sm"
-                            name="Dan Abrahmov"
-                            src="https://bit.ly/dan-abramov"
-                        />
+                       <FaUserCircle className="avatar" />
+                    
                     </HStack>
                 </Flex>
             </chakra.header>
