@@ -4,7 +4,7 @@ import Navbar from './Components/Header/Navbar';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Homepage/Services';
 import ServiceDetail from '../src/Pages/ServicesDetailPage/ServicesDetail';
-import Hero from './Components/Hero/Hero';
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
   <Router>
    <Navbar />
    <main>
-     <Hero />
+     
      <Routes>
           <Route path="/" element={<Home />}  />
           <Route path="/services" element={<ServiceDetail />} />
