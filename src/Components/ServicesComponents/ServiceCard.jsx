@@ -9,7 +9,7 @@ import {
     useBreakpointValue,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { Rating } from './Rating'
+import Rating  from './Rating'
 import FavoriteButton from './FavoriteButton'
 import { Link } from 'react-router-dom'
 

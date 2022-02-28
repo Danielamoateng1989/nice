@@ -13,6 +13,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import services from '../../services'
 import styled from 'styled-components'
+import Rating from '../../Components/ServicesComponents/Rating'
 
 
 const Button = styled.button`
