@@ -4,8 +4,8 @@ import Services  from '../../Components/ServicesComponents/Services'
 
 const ServicesList = () => {
     return (
-        // <Services />
-        <>Hello</>
+        <Services />
+      
     )
 }
 

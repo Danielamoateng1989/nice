@@ -65,7 +65,7 @@ const ServiceCard = (props) => {
                         </Text>
                     </HStack>
                     <HStack>
-                        <Rating defaultValue={props.product.rating} size="sm" />
+                        <Rating defaultValue={props.service.rating} size="sm" />
                         <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
                             ({props.service.numberOfReviews} reviews)
           </Text>
