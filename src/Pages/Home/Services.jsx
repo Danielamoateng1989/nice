@@ -1,5 +1,5 @@
 import React from 'react'
-import { ServicesCard } from '../../Components/Homepage/ServicesList'
+import { ServicesCard } from '../../Components/Homepage/Services'
 
 
 const Services = ({services}) => {
