@@ -10,8 +10,8 @@ import {
    
 } from '@chakra-ui/react'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import services from '../../services'
+import { Link, useParams, useLocation} from 'react-router-dom'
+import  services from '../../services'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
 
@@ -30,30 +30,17 @@ const Button = styled.button`
   }
 
 `
-
-
 const ServicesDetail = () => {
+const location = useLocation()
+const path = location.pathname.split('/')[2]
+    
+   const service = services.find(singleService => singleService.id.toString() === path);
+    
     return (
-
-
-      
-
-        
      <React.Fragment>
-         <h1>
-            <ul>
-                {services.map(service => {
-                   
-                    return (
-                        <div key={service.id}>
-                            <li>
-                                <h1>{service.price}</h1>
-                            </li>
-                        </div>
-                    )
-                })}
-            </ul>
-         </h1>
+
+      <h2>{service.name}</h2>
+
      </React.Fragment>
     )
 }
