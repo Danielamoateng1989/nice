@@ -1,11 +1,12 @@
 import React from 'react'
-import { ServicesCard } from '../../Components/Homepage/Services'
+import Services  from '../../Components/ServicesComponents/Services'
 
 
-const Services = ({services}) => {
+const ServicesList = () => {
     return (
-        <ServicesCard service={services} />
+        // <Services />
+        <>Hello</>
     )
 }
 
-export default Services
+export default ServicesList

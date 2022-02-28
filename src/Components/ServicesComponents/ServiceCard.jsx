@@ -14,8 +14,7 @@ import FavoriteButton from './FavoriteButton'
 // import { Link } from 'react-router-dom'
 
 
-
-export const ServicesCard = (props) => {
+const ServiceCard = (props) => {
     const { rootProps } = props
     return (
         <div className="content">
@@ -78,3 +77,5 @@ export const ServicesCard = (props) => {
 
     )
 }
+
+export default ServiceCard

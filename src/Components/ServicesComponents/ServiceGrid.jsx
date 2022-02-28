@@ -1,7 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react'
 import * as React from 'react'
 
-export const ServicvesGrid = (props) => {
+const ServiceGrid = (props) => {
     const columns = React.useMemo(() => {
         const count = React.Children.toArray(props.children).filter(React.isValidElement).length
         return {
@@ -26,3 +26,5 @@ export const ServicvesGrid = (props) => {
         />
     )
 }
+
+export default ServiceGrid
