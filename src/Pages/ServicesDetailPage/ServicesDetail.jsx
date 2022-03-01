@@ -45,7 +45,7 @@ const ServicesDetail = () => {
 
   const fetchAService = async () => {
 
-    const { data } = await axios.get(`http://localhost:5000/api/services${service.id}`)
+    const { data } = await axios.get(`http://localhost:5000/api/services/${id}`)
     setServivce(data)
 
   }
