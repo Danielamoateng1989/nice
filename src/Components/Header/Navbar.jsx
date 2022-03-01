@@ -1,13 +1,10 @@
 import React from "react";
-
 import {
     chakra,
     Box,
     Flex,
     useColorModeValue,
-    VisuallyHidden,
     HStack,
-    Button,
     useDisclosure,
     VStack,
     IconButton,
@@ -18,17 +15,10 @@ import {
     
 } from "@chakra-ui/react";
 import logo from "../../images/nice.png";
-import {
-    AiOutlineMenu,
-    AiFillHome,
-    AiOutlineInbox,
-    AiOutlineSearch,
-    AiFillBell,
-} from "react-icons/ai";
-import { BsFillCameraVideoFill } from "react-icons/bs";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import { FaUserCircle } from 'react-icons/fa'
-import { IoNotificationsOutline } from 'react-icons/io'
+
 
 const Navbar = () => {
     const bg = useColorModeValue("white", "gray.800");
