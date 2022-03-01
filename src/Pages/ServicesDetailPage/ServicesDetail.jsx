@@ -37,8 +37,6 @@ const ServicesDetail = () => {
     const service = services.find(singleService => singleService.id.toString() === path);
     
     return (
-   
-   
         <Box
           maxW="7xl"
           mx="auto"
@@ -153,8 +151,7 @@ const ServicesDetail = () => {
           </Stack>
         </Box>
 
-     
-    )
+)
 }
 
 export default ServicesDetail
