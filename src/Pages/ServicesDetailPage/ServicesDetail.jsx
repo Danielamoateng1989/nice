@@ -10,11 +10,12 @@ import {
     useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import { Link, useLocation} from 'react-router-dom'
+import { Link, useLocation, useParams} from 'react-router-dom'
 import  services from '../../services'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
-import {useState, useEffect, useParams} from 'react'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
 
 const Button = styled.button`
@@ -42,10 +43,17 @@ const ServicesDetail = () => {
 
   const {id} = useParams()
 
-  
+  const fetchAService = async () => {
 
+    const { data } = await axios.get(`http://localhost:5000/api/services${service.id}`)
+    setServivce(data)
 
+  }
 
+   useEffect(() => {
+     
+    fetchAService()
+   }, [id])
 
 
     return (
