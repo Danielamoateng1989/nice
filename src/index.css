@@ -326,15 +326,15 @@ span{
 
 .avatar {
   font-size: 2.8rem;
-  color: lightgrey;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .login_signup_button {
-  color: rgb(104, 103, 103);
+  color: rgb(255, 255, 255);
   font-size: 0.9rem;
-  border-color: #e9e9e9;
-  border-width: 2px;
   padding: 0.5rem;
+  font-weight: bold;
   border-radius: 0.5rem;
 }
 

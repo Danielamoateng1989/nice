@@ -21,7 +21,7 @@ import { FaUserCircle } from 'react-icons/fa'
 
 
 const Navbar = () => {
-    const bg = useColorModeValue("white", "gray.800");
+    const bg = useColorModeValue("#132020", "gray.800");
     const mobileNav = useDisclosure();
 
     return (
@@ -87,7 +87,7 @@ const Navbar = () => {
                                 children={<AiOutlineSearch />}
                                 
                             />
-                            <Input type="tel" placeholder="Search..." />
+                            <Input type="tel" placeholder="Search..." color="white"/>
                         </InputGroup>
 
                         <chakra.a
