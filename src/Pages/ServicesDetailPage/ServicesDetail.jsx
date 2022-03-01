@@ -124,7 +124,6 @@ const ServicesDetail = () => {
                   <HStack />
                   <Button>Continue</Button>
                 </Stack>
-
               </Stack>
 
             </Box>
