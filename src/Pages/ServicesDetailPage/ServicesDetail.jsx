@@ -38,6 +38,7 @@ const ServicesDetail = () => {
     
     return (
    
+   
         <Box
           maxW="7xl"
           mx="auto"
@@ -55,7 +56,7 @@ const ServicesDetail = () => {
               className="back-btn"
             >Go back</button>
           </Link>
-         
+    
           <Stack
             direction={{
               base: 'column-reverse',
@@ -103,6 +104,9 @@ const ServicesDetail = () => {
                   lg: '10',
                 }}
               >
+                
+                
+                
                 <Stack
                   spacing={{
                     base: '2',
@@ -147,8 +151,9 @@ const ServicesDetail = () => {
 
             </Flex>
           </Stack>
-
         </Box>
+
+     
     )
 }
 
