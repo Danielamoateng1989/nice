@@ -14,6 +14,7 @@ import { Link, useLocation} from 'react-router-dom'
 import  services from '../../services'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
+import {useState, useEffect, useParams} from 'react'
 
 
 const Button = styled.button`
@@ -32,10 +33,21 @@ const Button = styled.button`
 `
 const ServicesDetail = () => {
    
-    const location = useLocation()
-    const path = location.pathname.split('/')[2]
-    const service = services.find(singleService => singleService.id.toString() === path);
+    // const location = useLocation()
+    // const path = location.pathname.split('/')[2]
+    // const service = services.find(singleService => singleService.id.toString() === path);
     
+
+  const [service, setServivce]  = useState({})
+
+  const {id} = useParams()
+
+  
+
+
+
+
+
     return (
         <Box
           maxW="7xl"
