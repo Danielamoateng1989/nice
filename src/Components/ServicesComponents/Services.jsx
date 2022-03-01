@@ -9,9 +9,27 @@ import {useState, useEffect} from 'react'
 
 const Services = () => {
   
-    
-  
-  
+
+  const [services, setServices] = useState([])
+
+ 
+
+  const fetchAllServices = () => {
+
+    axios.get('http://localhost:5000/api/services')
+    .then((response) => {
+        const services = response.data
+        setServices(services)
+        console.log(services)
+    })
+  }
+
+
+
+
+  useEffect(() => {
+      fetchAllServices()
+  }, [])
   
     return (
         <Box
@@ -32,8 +50,8 @@ const Services = () => {
 
             <ServicesGrid>
 
-                {services.map((service) => (
-                    <ServicesCard key={service.id} service={service}/>
+                {services.map((service, index) => (
+                    <ServicesCard key={index} service={service}/>
                 ))}
 
             </ServicesGrid>
