@@ -17,11 +17,11 @@ import {
 import logo from "../../images/nice-white-logo.png";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom'
-import { FaUserCircle } from 'react-icons/fa'
+
 
 
 const Navbar = () => {
-    const bg = useColorModeValue("#131921", "gray.800");
+    const bg = useColorModeValue("#131921", "white.800");
     const mobileNav = useDisclosure();
 
     return (
@@ -40,7 +40,7 @@ const Navbar = () => {
                                 display={{ base: "flex", md: "none" }}
                                 aria-label="Open menu"
                                 fontSize="20px"
-                                color={useColorModeValue("gray.800", "inherit")}
+                                color={useColorModeValue("white.800", "inherit")}
                                 variant="ghost"
                                 icon={<AiOutlineMenu />}
                                 onClick={mobileNav.onOpen}
@@ -85,21 +85,24 @@ const Navbar = () => {
                             <InputLeftElement
                                 pointerEvents="none"
                                 children={<AiOutlineSearch />}
+                                color="black"
+                                
                                 
                             />
-                            <Input type="tel" placeholder="Search..." color="white"/>
+                            <Input type="tel" placeholder="Search..." color="white" bg="white"/>
+                        
                         </InputGroup>
 
                         <chakra.a
                             p={3}
-                            color={useColorModeValue("gray.800", "inherit")}
-                            rounded="sm"
-                            _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
+                            color={useColorModeValue("white.800", "inherit")}
+                            rounded="lg"
+                            
+                            _hover={{ color: useColorModeValue("white.800", "white.600") }}
                         >
                             
                         </chakra.a>
 
-                       <FaUserCircle className="avatar" />
                     
                     </HStack>
 
