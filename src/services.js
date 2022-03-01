@@ -44,7 +44,7 @@ const services = [
     {
 
         id: 5,
-        name: 'Men braids',
+        name: 'Braids',
         image: 'https://images.unsplash.com/photo-1592328906746-0a3ca0bde253?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
         description:
             'This is mens haircut. It is very nice to rock',
@@ -85,10 +85,10 @@ const services = [
     },
     {
         id: 9,
-        name: 'Haircut for me',
+        name: 'Haircut',
         image: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
         description:
-            'Haircut for men. ',
+            'Haircut ',
         price: 35.00,
         rating: 4.5,
         numberOfReviews: 10
