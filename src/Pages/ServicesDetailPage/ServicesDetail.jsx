@@ -57,6 +57,7 @@ const ServicesDetail = () => {
 
 
     return (
+      
         <Box
           maxW="7xl"
           mx="auto"
@@ -148,11 +149,11 @@ const ServicesDetail = () => {
                   <HStack />
                   <Button>Continue</Button>
                 </Stack>
+          
               </Stack>
 
             </Box>
 
-            <Flex flex="1" overflow="hidden" >
 
               <Image
                 src={service.image}
@@ -167,10 +168,9 @@ const ServicesDetail = () => {
                 
               />
 
-            </Flex>
+            
           </Stack>
         </Box>
-
 )
 }
 
