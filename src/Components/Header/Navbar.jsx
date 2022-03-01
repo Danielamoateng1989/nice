@@ -34,13 +34,14 @@ const Navbar = () => {
                 shadow="md"
             >
                 <Flex alignItems="center" justifyContent="space-between" mx="auto">
-                    <HStack display="flex" spacing={4} alignItems="center">
+                    <HStack display="flex" spacing={-1.5} alignItems="center">
                         <Box display={{ base: "inline-flex", md: "none" }}>
                             <IconButton
                                 display={{ base: "flex", md: "none" }}
                                 aria-label="Open menu"
                                 fontSize="20px"
-                                color={useColorModeValue("gray.800", "inherit")}
+                                color="white"
+                                fontWeight="bold"
                                 variant="ghost"
                                 icon={<AiOutlineMenu />}
                                 onClick={mobileNav.onOpen}
@@ -64,6 +65,7 @@ const Navbar = () => {
                                     aria-label="Close menu"
                                     justifySelf="self-start"
                                     onClick={mobileNav.onClose}
+                                    color="white"
                                 />
                                 
                             </VStack>
