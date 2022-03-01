@@ -119,7 +119,7 @@ const ServicesDetail = () => {
                     {service.rating}
                     <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
                       ({service.numberOfReviews} reviews)
-          </Text>
+                   </Text>
                   </HStack>
                   <HStack />
                   <Button>Continue</Button>
@@ -135,7 +135,7 @@ const ServicesDetail = () => {
                 src={service.image}
                 alt="Lovely Image"
                 fallback={<Skeleton />}
-                maxH="450px"
+                maxH="500px"
                 minW="300px"
                 objectFit="cover"
                 flex="1"
@@ -143,7 +143,6 @@ const ServicesDetail = () => {
               />
 
             </Flex>
-
           </Stack>
 
         </Box>
