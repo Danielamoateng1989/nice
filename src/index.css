@@ -309,15 +309,6 @@ span{
   background-color: #709ee8;
 }
 
-.search-bar {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 25px;
-}
-
 /* hero */
 .hero {
   width: 70vw;

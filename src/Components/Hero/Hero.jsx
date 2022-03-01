@@ -3,7 +3,6 @@ import {
     Text,
     Box,
     Flex,
-    useColorModeValue,
     Image,
     HStack,
     Stack,
