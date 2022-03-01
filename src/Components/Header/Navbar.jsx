@@ -106,7 +106,7 @@ const Navbar = () => {
                     
                     </HStack>
 
-                    <button className="login_signup_button">Login/Signup</button>
+                    <button className="login_signup_button">Login</button>
                 </Flex>
             </chakra.header>
         </React.Fragment>
