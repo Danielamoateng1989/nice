@@ -37,7 +37,7 @@ const ServicesDetail = () => {
     const service = services.find(singleService => singleService.id.toString() === path);
     
     return (
-     <React.Fragment>
+   
         <Box
           maxW="7xl"
           mx="auto"
@@ -66,6 +66,8 @@ const ServicesDetail = () => {
               lg: '20',
             }}
           >
+
+          
             <Box
               width={{
                 lg: 'sm',
@@ -128,42 +130,25 @@ const ServicesDetail = () => {
 
             </Box>
 
-            <Flex flex="1" overflow="hidden">
+            <Flex flex="1" overflow="hidden" >
 
               <Image
                 src={service.image}
-                alt="Lovely Image"
+                alt="Service Image"
                 fallback={<Skeleton />}
-                maxH="500px"
+                maxH="500"
                 minW="300px"
                 objectFit="cover"
                 flex="1"
                 borderRadius="15"
+                mt="5px"
+                
               />
 
             </Flex>
           </Stack>
 
         </Box>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     </React.Fragment>
     )
 }
 

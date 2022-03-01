@@ -197,11 +197,11 @@ nav {
   margin-right: 10px;
 }
 
-/*Footer */
-.center-footer {
-  display: flex;
-  justify-content: center;
+/* Footer style*/
+footer {
+  margin-top: 20px
 }
+
 
 /* Hero */
 .hero-paragraph {
