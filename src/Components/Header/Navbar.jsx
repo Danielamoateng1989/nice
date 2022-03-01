@@ -14,14 +14,14 @@ import {
     Input,
     
 } from "@chakra-ui/react";
-import logo from "../../images/nice.png";
+import logo from "../../images/nice-white-logo.png";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import { FaUserCircle } from 'react-icons/fa'
 
 
 const Navbar = () => {
-    const bg = useColorModeValue("#132020", "gray.800");
+    const bg = useColorModeValue("#131921", "gray.800");
     const mobileNav = useDisclosure();
 
     return (
