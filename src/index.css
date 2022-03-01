@@ -338,3 +338,11 @@ span{
   border-radius: 0.5rem;
 }
 
+/* Booka home service appointment heading*/
+.home_heading_1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: none;
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+}

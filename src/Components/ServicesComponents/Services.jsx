@@ -38,7 +38,9 @@ const Services = () => {
                 lg: '12',
             }}
         >
-
+   
+         <p className= "home_heading_1" >Book a home service appointment</p>
+            
 
             <ServicesGrid>
 
