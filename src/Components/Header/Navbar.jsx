@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
-    const bg = useColorModeValue("#131921", "white.800");
+    const bg = useColorModeValue("#131921", "gray.800");
     const mobileNav = useDisclosure();
 
     return (
@@ -34,13 +34,13 @@ const Navbar = () => {
                 shadow="md"
             >
                 <Flex alignItems="center" justifyContent="space-between" mx="auto">
-                    <HStack display="flex" spacing={3} alignItems="center">
+                    <HStack display="flex" spacing={4} alignItems="center">
                         <Box display={{ base: "inline-flex", md: "none" }}>
                             <IconButton
                                 display={{ base: "flex", md: "none" }}
                                 aria-label="Open menu"
                                 fontSize="20px"
-                                color={useColorModeValue("white.800", "inherit")}
+                                color={useColorModeValue("gray.800", "inherit")}
                                 variant="ghost"
                                 icon={<AiOutlineMenu />}
                                 onClick={mobileNav.onOpen}
@@ -89,7 +89,7 @@ const Navbar = () => {
                                 
                                 
                             />
-                            <Input type="tel" placeholder="Search..." color="white" bg="white"/>
+                            <Input type="tel" placeholder="Search..." color="gray" bg="white"/>
                         
                         </InputGroup>
 
