@@ -59,7 +59,8 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: grey;
+  color: white;
+  
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -196,11 +197,11 @@ nav {
   margin-right: 10px;
 }
 
-/*Footer */
-.center-footer {
-  display: flex;
-  justify-content: center;
+/* Footer style*/
+footer {
+  margin-top: 20px
 }
+
 
 /* Hero */
 .hero-paragraph {
@@ -231,8 +232,12 @@ span{
   font-weight: bold;
   font-size: 1rem;
   margin: 0.5rem;
+
 }
 
+.back-btn:hover{
+  color: #2A73E8;
+}
 .user-avatar {
   font-size: 2.5rem;
   margin-left: 1rem;
@@ -304,11 +309,32 @@ span{
   background-color: #709ee8;
 }
 
-.search-bar {
+/* hero */
+.hero {
+  width: 70vw;
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 25px;
+  margin: auto;
+  margin-top: 2px;
+  object-fit: cover;
 }
+
+.price {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.avatar {
+  font-size: 2.8rem;
+  color: lightgrey;
+}
+
+.login_signup_button {
+  color: rgb(104, 103, 103);
+  font-size: 0.9rem;
+  border-color: #e9e9e9;
+  border-width: 2px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
