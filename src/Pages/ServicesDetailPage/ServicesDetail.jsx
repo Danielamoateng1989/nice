@@ -33,16 +33,9 @@ const Button = styled.button`
 
 `
 const ServicesDetail = () => {
-   
-    // const location = useLocation()
-    // const path = location.pathname.split('/')[2]
-    // const service = services.find(singleService => singleService.id.toString() === path);
-    
-
+  
   const [service, setServivce]  = useState({})
-
   const {id} = useParams()
-
   const fetchAService = async () => {
 
     const { data } = await axios.get(`http://localhost:5000/api/services/${id}`)
