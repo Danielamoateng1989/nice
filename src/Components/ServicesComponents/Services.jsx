@@ -2,9 +2,17 @@ import { Box } from '@chakra-ui/react'
 import services from '../../services'
 import ServicesCard from './ServiceCard'
 import ServicesGrid from './ServiceGrid'
+import axios from 'axios'
+import {useState, useEffect} from 'react'
+
 
 
 const Services = () => {
+  
+    
+  
+  
+  
     return (
         <Box
             maxW="7xl"
