@@ -7,7 +7,7 @@ Book an appointment with a professional from nice.com and receive a hair, nails,
 
 
 ## Homapge
-The home page of the application renders a list of the services in the database.
+The home page of the application renders a list of services that enables users to select a style and book and book with a nice.com provider.
 
 ![homepage](https://user-images.githubusercontent.com/10266209/156293397-da5fe063-e4d2-448c-b304-c43c610958df.png)
 ![bottom](https://user-images.githubusercontent.com/10266209/156293507-3e82d69e-518b-45e9-8fd9-8aa682673128.png)
