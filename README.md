@@ -18,6 +18,10 @@ The service detail page renders a single service, which consist of the service n
 ![Screen Shot 2022-03-01 at 11 17 26 PM](https://user-images.githubusercontent.com/10266209/156294268-a10843c7-7aa0-4a2b-a6a1-cc3fac410dde.png)
 
 
+## Date Time Picker
+The date time picker gives users the ability to select a date and time for their appointment. 
+
+![DateTimePicker](https://user-images.githubusercontent.com/10266209/156340571-f4ae468a-a939-476e-b3ba-2e3f81116f6c.png)
 
 npm start
 ``` 
