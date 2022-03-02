@@ -2,7 +2,7 @@ import React from 'react'
 import { TimePicker } from 'antd'
 
 
-const Timepicker = () => {
+const MyTimePicker = () => {
 
     const onChange = (time, timeString) => {
         console.log(time, timeString);
@@ -16,4 +16,4 @@ const Timepicker = () => {
     )
 }
 
-export default Timepicker
+export default MyTimePicker

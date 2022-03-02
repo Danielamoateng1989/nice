@@ -140,7 +140,7 @@ const ServicesDetail = () => {
                    </Text>
                   </HStack>
                   <HStack />
-                  <Button>Continue</Button>
+                  {/* <Button onClick={handleDateTimePicker}>Continue</Button> */}
                 </Stack>
           
               </Stack>

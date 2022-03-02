@@ -1,7 +1,7 @@
 import React from 'react'
 import { DatePicker } from 'antd'
 import 'antd/dist/antd.css'
-import Timepicker from './Timepicker'
+import Timepicker from './TimePicker'
 
 const DateTimePicker = () => {
     const dateFormatList = ['MM/DD/YYYY', 'DD/MM/YY'];
