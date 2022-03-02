@@ -10,8 +10,7 @@ import {
     useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import { Link, useLocation, useParams} from 'react-router-dom'
-import  services from '../../services'
+import { Link, useParams, useNavigate} from 'react-router-dom'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
 import {useState, useEffect} from 'react'
@@ -36,8 +35,16 @@ const ServicesDetail = () => {
   
   const [service, setServivce]  = useState({})
   const {id} = useParams()
-  const fetchAService = async () => {
 
+  const navigate = useNavigate()
+
+  const handleDateTimePicker = () => {
+    navigate('/datetime')
+  }
+
+
+
+  const fetchAService = async () => {
     const { data } = await axios.get(`http://localhost:5000/api/services/${id}`)
     setServivce(data)
 
@@ -140,7 +147,7 @@ const ServicesDetail = () => {
                    </Text>
                   </HStack>
                   <HStack />
-                  {/* <Button onClick={handleDateTimePicker}>Continue</Button> */}
+                  <Button onClick={handleDateTimePicker}>Continue</Button>
                 </Stack>
           
               </Stack>
