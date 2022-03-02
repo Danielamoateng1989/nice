@@ -10,10 +10,11 @@ import {
     useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import { Link, useLocation} from 'react-router-dom'
-import  services from '../../services'
+import { Link, useParams, useNavigate} from 'react-router-dom'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
 
 const Button = styled.button`
@@ -31,12 +32,32 @@ const Button = styled.button`
 
 `
 const ServicesDetail = () => {
-   
-    const location = useLocation()
-    const path = location.pathname.split('/')[2]
-    const service = services.find(singleService => singleService.id.toString() === path);
-    
+  
+  const [service, setServivce]  = useState({})
+  const {id} = useParams()
+
+  const navigate = useNavigate()
+
+  const handleDateTimePicker = () => {
+    navigate('/datetime')
+  }
+
+
+
+  const fetchAService = async () => {
+    const { data } = await axios.get(`http://localhost:5000/api/services/${id}`)
+    setServivce(data)
+
+  }
+
+   useEffect(() => {
+     
+    fetchAService()
+   }, [id])
+
+
     return (
+      
         <Box
           maxW="7xl"
           mx="auto"
@@ -126,13 +147,13 @@ const ServicesDetail = () => {
                    </Text>
                   </HStack>
                   <HStack />
-                  <Button>Continue</Button>
+                  <Button onClick={handleDateTimePicker}>Continue</Button>
                 </Stack>
+          
               </Stack>
 
             </Box>
 
-            <Flex flex="1" overflow="hidden" >
 
               <Image
                 src={service.image}
@@ -147,10 +168,9 @@ const ServicesDetail = () => {
                 
               />
 
-            </Flex>
+            
           </Stack>
         </Box>
-
 )
 }
 

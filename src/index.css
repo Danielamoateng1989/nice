@@ -27,6 +27,7 @@ body {
   color: rgb(222, 222, 222);
   line-height: 1.5;
   font-size: 0.875rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ul {
@@ -44,12 +45,15 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  
 }
 h1 {
   font-size: 3rem;
+  
 }
 h2 {
   font-size: 2rem;
+  
 }
 h3 {
   font-size: 1.25rem;
@@ -322,19 +326,31 @@ span{
   color: #000;
   font-size: 2.5rem;
   font-weight: bold;
+  
 }
 
 .avatar {
   font-size: 2.8rem;
-  color: lightgrey;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .login_signup_button {
-  color: rgb(104, 103, 103);
+  color:rgb(77, 77, 77);
   font-size: 0.9rem;
-  border-color: #e9e9e9;
-  border-width: 2px;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 8px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Booka home service appointment heading*/
+.home_heading_1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: none;
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -14,14 +14,14 @@ import {
     Input,
     
 } from "@chakra-ui/react";
-import logo from "../../images/nice.png";
+import logo from "../../images/nice-white-logo.png";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { Link } from 'react-router-dom'
-import { FaUserCircle } from 'react-icons/fa'
+
 
 
 const Navbar = () => {
-    const bg = useColorModeValue("white", "gray.800");
+    const bg = useColorModeValue("#131921", "gray.800");
     const mobileNav = useDisclosure();
 
     return (
@@ -34,13 +34,14 @@ const Navbar = () => {
                 shadow="md"
             >
                 <Flex alignItems="center" justifyContent="space-between" mx="auto">
-                    <HStack display="flex" spacing={3} alignItems="center">
+                    <HStack display="flex" spacing={-1.5} alignItems="center">
                         <Box display={{ base: "inline-flex", md: "none" }}>
                             <IconButton
                                 display={{ base: "flex", md: "none" }}
                                 aria-label="Open menu"
                                 fontSize="20px"
-                                color={useColorModeValue("gray.800", "inherit")}
+                                color="white"
+                                fontWeight="bold"
                                 variant="ghost"
                                 icon={<AiOutlineMenu />}
                                 onClick={mobileNav.onOpen}
@@ -64,6 +65,7 @@ const Navbar = () => {
                                     aria-label="Close menu"
                                     justifySelf="self-start"
                                     onClick={mobileNav.onClose}
+                                    color="white"
                                 />
                                 
                             </VStack>
@@ -85,25 +87,28 @@ const Navbar = () => {
                             <InputLeftElement
                                 pointerEvents="none"
                                 children={<AiOutlineSearch />}
+                                color="black"
+                                
                                 
                             />
-                            <Input type="tel" placeholder="Search..." />
+                            <Input type="tel" placeholder="Search..." color="gray" bg="white"/>
+                        
                         </InputGroup>
 
                         <chakra.a
                             p={3}
-                            color={useColorModeValue("gray.800", "inherit")}
-                            rounded="sm"
-                            _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
+                            color={useColorModeValue("white.800", "inherit")}
+                            rounded="lg"
+                            
+                            _hover={{ color: useColorModeValue("white.800", "white.600") }}
                         >
                             
                         </chakra.a>
 
-                       <FaUserCircle className="avatar" />
                     
                     </HStack>
 
-                    <button className="login_signup_button">Login/Signup</button>
+                    <button className="login_signup_button">Login</button>
                 </Flex>
             </chakra.header>
         </React.Fragment>

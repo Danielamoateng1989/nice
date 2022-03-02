@@ -26,7 +26,7 @@ const ServiceCard = (props) => {
                 {...rootProps}
             >
                 <Box position="relative">
-                    <Link to={`/services/${props.service.id}`}>
+                    <Link to={`/services/${props.service._id}`}>
                     <AspectRatio ratio={4 / 3}>
 
                         <Image
@@ -38,7 +38,8 @@ const ServiceCard = (props) => {
                             borderRadius={useBreakpointValue({
                                 base: 'md',
                                 md: 'xl',
-                            })}
+                            })
+                        }
                             objectFit="cover"
                         />
 
@@ -48,8 +49,15 @@ const ServiceCard = (props) => {
                         position="absolute"
                         top="4"
                         right="4"
-                        aria-label={`Add ${props.service.name} to your favourites`}
+                        aria-label={`Add ${props.service.name} to your favorites`}
+                        backgroundColor="transparent"
+                        color="white"
+                        fontWeight="bold"
+                        fontSize="22px"
+                        border="none"
                     />
+                
+                
                 </Box>
                 <Stack>
                     <Stack spacing="1">
