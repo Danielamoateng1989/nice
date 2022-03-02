@@ -13,7 +13,8 @@ The home page of the application renders a list of the services in the database.
 
 ## Service Detail Page
 The service detail page renders a single service 
-![serviceDetail](https://user-images.githubusercontent.com/10266209/156293748-2d7aa17e-56a9-4fb0-85eb-7a84c0ffb63c.png)
+![Screen Shot 2022-03-01 at 11 17 26 PM](https://user-images.githubusercontent.com/10266209/156294268-a10843c7-7aa0-4a2b-a6a1-cc3fac410dde.png)
+
 
 
 npm start
