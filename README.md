@@ -26,12 +26,13 @@ The service detail page renders a single service, which consist of the service n
 ## Date Time Picker
 The date time picker gives users the ability to select a date and time for their appointment. 
 
-![DateTimePicker](https://user-images.githubusercontent.com/10266209/156340571-f4ae468a-a939-476e-b3ba-2e3f81116f6c.png)
+![dateandtime](https://user-images.githubusercontent.com/10266209/156423986-7e4b1ea5-82ad-44df-874f-306f83205f5c.png)
+
 
 ## To run on your local environtment
 
 ```
-git clone <application url>
+git clone https://github.com/Danielamoateng1989/nice.git
 ```
 
 ## Run
