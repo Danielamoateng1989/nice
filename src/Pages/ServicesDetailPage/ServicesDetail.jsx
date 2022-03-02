@@ -1,6 +1,5 @@
 import {
   Box,
-  Flex,
   Image,
   Skeleton,
   Stack,
@@ -12,6 +11,7 @@ import React from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
+import { FaArrowLeft } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -69,9 +69,7 @@ const ServicesDetail = () => {
       }}
     >
       <Link to="/">
-        <button type="button"
-          className="back-btn"
-        >Go back</button>
+        <FaArrowLeft className="back_button"/>
       </Link>
 
       <Stack
