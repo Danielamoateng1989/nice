@@ -8,11 +8,13 @@ Book an appointment with a professional from nice.com and receive a hair, nails,
 
 ## Homapge
 The home page of the application renders a list of the services in the database.
+
 ![homepage](https://user-images.githubusercontent.com/10266209/156293397-da5fe063-e4d2-448c-b304-c43c610958df.png)
 ![bottom](https://user-images.githubusercontent.com/10266209/156293507-3e82d69e-518b-45e9-8fd9-8aa682673128.png)
 
 ## Service Detail Page
-The service detail page renders a single service 
+The service detail page renders a single service. The continue button allows users to navigate to a date and time picker page where they can select a date and time for their appointment. 
+
 ![Screen Shot 2022-03-01 at 11 17 26 PM](https://user-images.githubusercontent.com/10266209/156294268-a10843c7-7aa0-4a2b-a6a1-cc3fac410dde.png)
 
 
