@@ -39,7 +39,7 @@ const Services = () => {
             }}
         >
    
-         <p className= "home_heading_1">Book a home service appointment</p>
+         <p className= "home_para_1">These are our latest styles. Pick a style and book an appointment</p>
 
 
           
