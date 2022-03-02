@@ -48,8 +48,15 @@ const ServiceCard = (props) => {
                         position="absolute"
                         top="4"
                         right="4"
-                        aria-label={`Add ${props.service.name} to your favourites`}
+                        aria-label={`Add ${props.service.name} to your favorites`}
+                        backgroundColor="transparent"
+                        color="white"
+                        fontWeight="bold"
+                        fontSize="20px"
+                        border="none"
                     />
+                
+                
                 </Box>
                 <Stack>
                     <Stack spacing="1">
