@@ -13,7 +13,7 @@ The home page of the application renders a list of services that enables users t
 ![bottom](https://user-images.githubusercontent.com/10266209/156293507-3e82d69e-518b-45e9-8fd9-8aa682673128.png)
 
 ## Service Detail Page
-The service detail page renders a single service. The continue button allows users to navigate to a date and time picker page where they can select a date and time for their appointment. 
+The service detail page renders a single service, which consist of the service name, price, rating, review and image. The continue button allows users to navigate to a date and time picker page where users will be able to their preferred date and time for their home service appointment.
 
 ![Screen Shot 2022-03-01 at 11 17 26 PM](https://user-images.githubusercontent.com/10266209/156294268-a10843c7-7aa0-4a2b-a6a1-cc3fac410dde.png)
 
