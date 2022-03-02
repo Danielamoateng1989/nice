@@ -39,8 +39,10 @@ const Services = () => {
             }}
         >
    
-         <p className= "home_heading_1" >Book a home service appointment</p>
-            
+         <p className= "home_heading_1">Book a home service appointment</p>
+
+
+          
 
             <ServicesGrid>
 

@@ -38,7 +38,8 @@ const ServiceCard = (props) => {
                             borderRadius={useBreakpointValue({
                                 base: 'md',
                                 md: 'xl',
-                            })}
+                            })
+                        }
                             objectFit="cover"
                         />
 
@@ -52,7 +53,7 @@ const ServiceCard = (props) => {
                         backgroundColor="transparent"
                         color="white"
                         fontWeight="bold"
-                        fontSize="20px"
+                        fontSize="22px"
                         border="none"
                     />
                 

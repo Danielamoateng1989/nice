@@ -23,6 +23,7 @@ const Hero = () => {
                 bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
                 <Stack maxW={'6xl'} align={'flex-start'} spacing={6}>
                     <Text
+                        
                         color={'white'}
                         fontWeight={700}
                         lineHeight={1.2}
