@@ -1,19 +1,18 @@
-
 import {
-    Box,
-    Flex,
-    Image,
-    Skeleton,
-    Stack,
-    HStack,
-    Text,
-    useColorModeValue
+  Box,
+  Flex,
+  Image,
+  Skeleton,
+  Stack,
+  HStack,
+  Text,
+  useColorModeValue
 } from '@chakra-ui/react'
 import React from 'react'
-import { Link, useParams, useNavigate} from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Rating from '../../Components/ServicesComponents/Rating'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
@@ -29,12 +28,11 @@ const Button = styled.button`
   &:hover {
     background-color: #709ee8;
   }
-
 `
 const ServicesDetail = () => {
-  
-  const [service, setServivce]  = useState({})
-  const {id} = useParams()
+
+  const [service, setServivce] = useState({})
+  const { id } = useParams()
 
   const navigate = useNavigate()
 
@@ -50,128 +48,130 @@ const ServicesDetail = () => {
 
   }
 
-   useEffect(() => {
-     
+  useEffect(() => {
+
     fetchAService()
-   }, [id])
+  }, [id])
 
 
-    return (
-      
+  return (
+
+    <Box
+      maxW="7xl"
+      mx="auto"
+      px={{
+        base: '0',
+        lg: '12',
+      }}
+      py={{
+        base: '0',
+        lg: '12',
+      }}
+    >
+      <Link to="/">
+        <button type="button"
+          className="back-btn"
+        >Go back</button>
+      </Link>
+
+      <Stack
+        direction={{
+          base: 'column-reverse',
+          lg: 'row',
+        }}
+        spacing={{
+          base: '0',
+          lg: '20',
+        }}
+      >
+
+
         <Box
-          maxW="7xl"
-          mx="auto"
+          width={{
+            lg: 'sm',
+          }}
+          transform={{
+            base: 'translateY(-50%)',
+            lg: 'none',
+          }}
+          bg={{
+            base: useColorModeValue('gray.50', 'gray.700'),
+            lg: 'transparent',
+          }}
+          mx={{
+            base: '6',
+            md: '8',
+            lg: '0',
+          }}
           px={{
-            base: '0',
-            lg: '12',
+            base: '6',
+            md: '8',
+            lg: '0',
           }}
           py={{
-            base: '0',
+            base: '6',
+            md: '8',
             lg: '12',
           }}
         >
-          <Link to="/">
-            <button type="button"
-              className="back-btn"
-            >Go back</button>
-          </Link>
-    
+
           <Stack
-            direction={{
-              base: 'column-reverse',
-              lg: 'row',
-            }}
             spacing={{
-              base: '0',
-              lg: '20',
+              base: '8',
+              lg: '10',
             }}
           >
 
-          
-            <Box
-              width={{
-                lg: 'sm',
-              }}
-              transform={{
-                base: 'translateY(-50%)',
-                lg: 'none',
-              }}
-              bg={{
-                base: useColorModeValue('gray.50', 'gray.700'),
-                lg: 'transparent',
-              }}
-              mx={{
-                base: '6',
-                md: '8',
-                lg: '0',
-              }}
-              px={{
-                base: '6',
-                md: '8',
-                lg: '0',
-              }}
-              py={{
-                base: '6',
-                md: '8',
-                lg: '12',
+
+
+            <Stack
+              spacing={{
+                base: '2',
+                lg: '4',
               }}
             >
 
-              <Stack
-                spacing={{
-                  base: '8',
-                  lg: '10',
-                }}
-              >
-                
-                
-                
-                <Stack
-                  spacing={{
-                    base: '2',
-                    lg: '4',
-                  }}
-                >
-
-                  <h1 size="xl" className="hero-heading">
-                    {service.name}
-                  </h1>
-                  <p size="xl" fontWeight="normal" className="price">
-                    ${service.price}
-                  </p>
-                  <HStack>
-                    <Rating defaultValue={service.rating} size="sm" />
-                    {service.rating}
-                    <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
-                      ({service.numberOfReviews} reviews)
+              <h1 size="xl" className="hero-heading">
+                {service.name}
+              </h1>
+              <p size="xl" fontWeight="normal" className="price">
+                ${service.price}
+              </p>
+              <HStack>
+                <Rating defaultValue={service.rating} size="sm" />
+                {service.rating}
+                <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
+                  ({service.numberOfReviews} reviews)
                    </Text>
-                  </HStack>
-                  <HStack />
-                  <Button onClick={handleDateTimePicker}>Continue</Button>
-                </Stack>
-          
-              </Stack>
+              </HStack>
 
-            </Box>
+              <Text color={useColorModeValue('gray.600', 'gray.400')}>{service.description}</Text>
+              <HStack />
+              <Button onClick={handleDateTimePicker}>Continue</Button>
+            </Stack>
 
-
-              <Image
-                src={service.image}
-                alt="Service Image"
-                fallback={<Skeleton />}
-                maxH="500"
-                minW="300px"
-                objectFit="cover"
-                flex="1"
-                borderRadius="15"
-                mt="5px"
-                
-              />
-
-            
           </Stack>
+
         </Box>
-)
+
+
+        <Image
+          src={service.image}
+          alt="Service Image"
+          fallback={<Skeleton />}
+          maxH="500"
+          minW="300px"
+          objectFit="cover"
+          flex="1"
+          borderRadius="15"
+          mt="5px"
+
+        />
+
+
+      </Stack>
+    </Box>
+  )
 }
 
 export default ServicesDetail

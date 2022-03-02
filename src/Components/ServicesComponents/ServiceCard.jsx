@@ -56,8 +56,6 @@ const ServiceCard = (props) => {
                         fontSize="22px"
                         border="none"
                     />
-                
-                
                 </Box>
                 <Stack>
                     <Stack spacing="1">
