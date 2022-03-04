@@ -28,6 +28,16 @@ The date time picker gives users the ability to select a date and time for their
 
 ![dateandtime](https://user-images.githubusercontent.com/10266209/156423986-7e4b1ea5-82ad-44df-874f-306f83205f5c.png)
 
+##Technologies Used
+- React
+- Chakra
+- Material UI
+- Styled Components
+- MongoDB
+- Express
+- Mongoose
+- Axios
+- Redux
 
 
 ## To run on your local environtment
