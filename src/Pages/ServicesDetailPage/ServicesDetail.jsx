@@ -154,7 +154,7 @@ const ServicesDetail = () => {
 
               <Text color={useColorModeValue('gray.600', 'gray.400')}>{service.description}</Text>
               <HStack />
-              <Button onClick={handleDateTimePicker}>Continue</Button>
+              <Button onClick={handleDateTimePicker} disabled>Continue</Button>
             </Stack>
 
           </Stack>
