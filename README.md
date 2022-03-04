@@ -29,16 +29,26 @@ The date time picker gives users the ability to select a date and time for their
 ![dateandtime](https://user-images.githubusercontent.com/10266209/156423986-7e4b1ea5-82ad-44df-874f-306f83205f5c.png)
 
 
-## To run on your local environtment
 
+## To run on your local environtment
 ```
 git clone https://github.com/Danielamoateng1989/nice.git
 ```
 
-## Run
+
+## Install Dependencies
+```
+npm install
+
+```
+
+## Run app in development mode
 ```
 npm run dev
+
 ```
+
+
 
 
 ## License
