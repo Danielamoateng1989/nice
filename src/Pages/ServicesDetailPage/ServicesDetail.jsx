@@ -41,7 +41,7 @@ const ServicesDetail = () => {
   }
 
   const fetchAService = async () => {
-    const { data } = await axios.get(`http://niceservice.co/${id}`)
+    const { data } = await axios.get(`https://niceservice.co/${id}`)
     setServivce(data)
 
   }
