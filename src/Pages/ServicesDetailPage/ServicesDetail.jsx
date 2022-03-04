@@ -40,10 +40,8 @@ const ServicesDetail = () => {
     navigate('/datetime')
   }
 
-
-
   const fetchAService = async () => {
-    const { data } = await axios.get(`http://localhost:5000/api/services/${id}`)
+    const { data } = await axios.get(`http://niceservice.co/${id}`)
     setServivce(data)
 
   }
@@ -52,8 +50,6 @@ const ServicesDetail = () => {
 
     fetchAService()
   }, [id])
-
-
   return (
 
     <Box

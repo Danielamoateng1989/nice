@@ -18,7 +18,7 @@ import { FaStar } from 'react-icons/fa'
                         key={index}
                         as={FaStar}
                         fontSize={size}
-                        color={index <= defaultValue ? "#000" : color}
+                        color={index <= defaultValue ? "#f8a41e" : color}
                     />
                 ))}
         </HStack>

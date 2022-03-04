@@ -11,11 +11,11 @@ const Services = () => {
   const [services, setServices] = useState([])
   const fetchAllServices = () => {
 
-    axios.get('http://localhost:5000/api/services')
+      axios.get('http://niceservice.co/')
     .then((response) => {
         const services = response.data
         setServices(services)
-        console.log(services)
+        
     })
   }
 
