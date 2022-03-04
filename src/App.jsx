@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Pages/Homepage/Services';
 import ServiceDetail from './Pages/ServicesDetailPage/ServicesDetail';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import DateTimePicker from './Components/DateTimePicer/DateTimePicker'
+
 
 const App = () => {
   return (
@@ -16,7 +16,6 @@ const App = () => {
      <Routes>
           <Route path="/" element={<Home />}  />
           <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/datetime" element={<DateTimePicker />} />
           <Route
             path="*"
             element={

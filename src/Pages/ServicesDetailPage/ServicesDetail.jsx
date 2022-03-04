@@ -49,7 +49,7 @@ const ServicesDetail = () => {
   useEffect(() => {
 
     fetchAService()
-  }, [id])
+  },[id])
   return (
 
     <Box
@@ -70,7 +70,7 @@ const ServicesDetail = () => {
 
       <Stack
         direction={{
-          base: 'column-reverse',
+          base: 'column',
           lg: 'row',
         }}
         spacing={{
@@ -78,6 +78,19 @@ const ServicesDetail = () => {
           lg: '20',
         }}
       >
+        <Image
+          src={service.image}
+          alt="Service Image"
+          fallback={<Skeleton />}
+          maxH="500"
+          minW="300px"
+          objectFit="cover"
+          flex="1"
+          borderRadius="15"
+          mt="5px"
+
+        />
+
 
 
         <Box
@@ -149,20 +162,7 @@ const ServicesDetail = () => {
         </Box>
 
 
-        <Image
-          src={service.image}
-          alt="Service Image"
-          fallback={<Skeleton />}
-          maxH="500"
-          minW="300px"
-          objectFit="cover"
-          flex="1"
-          borderRadius="15"
-          mt="5px"
-
-        />
-
-
+       
       </Stack>
     </Box>
   )
