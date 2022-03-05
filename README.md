@@ -30,15 +30,14 @@ The date time picker gives users the ability to select a date and time for their
 
 ## Technologies Used
 - React
-- Chakra
+- Chakra UI
 - Material UI
 - Styled Components
 - MongoDB
 - Express
 - Mongoose
 - Axios
-- Redux
-
+- Ant
 
 ## To run on your local environtment
 ```
