@@ -54,12 +54,11 @@ npm install
 
 ## Run app in development mode
 ```
-npm run dev
+npm start
 
 ```
-
-
-
+## Web API service Url
+https://niceservice.co/
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
