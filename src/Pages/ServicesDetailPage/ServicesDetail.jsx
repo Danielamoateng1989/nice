@@ -90,9 +90,7 @@ const ServicesDetail = () => {
           mt="5px"
 
         />
-
-
-
+        
         <Box
           width={{
             lg: 'sm',

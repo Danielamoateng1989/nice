@@ -16,7 +16,7 @@ const Footer = () => (
                 base: '4',
                 md: '8',
             }}
-            bg="#F7F7F7"
+            bg="white"
         >
             <Stack>
                 <Stack direction="row" spacing="4" align="center" justify="space-between">
